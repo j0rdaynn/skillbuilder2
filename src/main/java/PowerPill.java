@@ -9,8 +9,8 @@ public class PowerPill
     // constructors
     /*
      * Initializes this power pill to a default power value and
-     * and sets the name of the pill to name.
-     * @param name name of this power pill.
+     * sets the name of the pill to name.
+     * @param name of this power pill.
      */
     public PowerPill(String name)
     {
@@ -26,8 +26,11 @@ public class PowerPill
      */
     public PowerPill(String name, int power)
     {
-        // TODO - add your code here
+        setPower(power);
+        setName(name);
     }
+
+    //public PowerPill(){}
 
     // accessor methods
 
@@ -37,7 +40,7 @@ public class PowerPill
      */
     public int getPower()
     {
-        // TODO - add your code here
+        return powerSupply;
     }
 
     /*
@@ -46,19 +49,28 @@ public class PowerPill
      */
     public String getName()
     {
-        // TODO - add your code here
+        return name;
+
     }
 
     // mutator methods
 
     /*
      * Sets the power value of this power pill.
-     * @param power power value to set for this power pill.
+     * @param power value to set for this power pill.
      */
     public void setPower(int power)
     {
-        // TODO - add your code here
+        powerSupply = power;
+
     }
+    /*
+    String color;
+    public void setColor(String color)
+    {
+        this.color = color
+    }
+     */
 
     /*
      * Set the name of this power pill.
@@ -66,6 +78,6 @@ public class PowerPill
      */
     public void setName(String name)
     {
-        // TODO - add your code here
+        this.name = name;
     }
 }
